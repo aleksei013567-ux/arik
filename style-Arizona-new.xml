@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style title="Arizona new" description="vk.com/thevelasco" user_selectable="1" base_version_id="2020770" export_version="2">
+  <assets/>
+  <templates>
+    <template title="arizonaheader.less" type="public" addon_id="" version_id="0" version_string=""><![CDATA[.p-header-logo--before {
+    background-image: url(https://forum.arizona-rp.com/styles/fury/img/logobg.jpg) !important;
+    background-color: transparent !important;
+    background-size: 100% !important;
+    background-position: center top !important;
+}]]></template>
+    <template title="extra.less" type="public" addon_id="XF" version_id="2020770" version_string="2.2.7"><![CDATA[.node-body {
+  .m-transition(margin-left, .2s, ease-in-out);
+
+    &:hover {
+        margin-left: 10px;
+    }
+}
+.p-header-logo--before {
+    background-image: url(styles/fury/img/logobg.jpg) !important;
+    background-color: transparent !important;
+    background-size: 100% !important;
+    background-position: center top !important;
+}
+.p-header-logo--before::after {
+	display:none;
+}
+.p-body-sidebar .block-minorHeader {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+.button.button--primary, a.button.button--primary {
+    color: #fff;
+    background: #0078af;
+    min-width: 80px;
+}
+.button, a.button {
+    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+	margin-left: 2px;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    -webkit-transition: background-color .125s ease, border-color .125s ease, color .125s ease;
+    transition: background-color .125s ease, border-color .125s ease, color .125s ease;
+    font-size: 12px;
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-right: 18px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: .05em;
+    border: none;
+    box-shadow: inset 0 -2px 0 rgba(0,0,0,0.12);
+    color: #fff;
+    background: #0078af;
+}
+.quick-access .button {
+padding: 1px 0;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #4d5460;
+    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    -webkit-transition: background-color .125s ease, border-color .125s ease, color .125s ease;
+    transition: background-color .125s ease, border-color .125s ease, color .125s ease;
+    font-size: 14px;
+    border-radius: 4px;
+    padding-top: 15px;
+    padding-right: 18px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: .05em;
+    border: none;
+    color: #fff;
+    background: #00d4f817;
+}
+.osnov {
+    background: url(/styles/fury/img/ban.svg);
+    width: 169px;
+    height: 35px;
+    font-size: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border: none
+}]]></template>
+  </templates>
+  <properties>
+    <property property_name="buttonBase" group_name="button" title="Button base" description="Defines the styling for the basic elements that are common to all text-based buttons" property_type="css" value_type="" depends_on="" value_group="" display_order="20000" css_components="text,border_radius,padding,extra" addon_id="XF">
+      <value>{
+    "font-size": "@xf-fontSizeSmaller",
+    "border-radius": "16px",
+    "padding-top": "15px",
+    "padding-right": "18px",
+    "padding-bottom": "13px",
+    "padding-left": "18px",
+    "extra": "font-weight: 500;\ntext-align: center;\ntext-transform: uppercase;\nletter-spacing: .05em;\nborder: none;\nbox-shadow: inset 0 -2px 0 rgba(0,0,0,0.12);"
+}</value>
+    </property>
+    <property property_name="buttonPrimary" group_name="button" title="Button - primary" description="These rules are used mostly for the main submit button for forms" property_type="css" value_type="" depends_on="" value_group="" display_order="20200" css_components="text,background,extra" addon_id="XF">
+      <value>{
+    "color": "@xf-textColorEmphasized",
+    "background-color": "@xf-buttonPrimaryBg",
+    "extra": "min-width: 80px;"
+}</value>
+    </property>
+    <property property_name="chromeBg" group_name="color" title="Page chrome background color" description="" property_type="value" value_type="color" depends_on="" value_group="chrome" display_order="6000" addon_id="XF">
+      <value>"rgb(23, 30, 41)"</value>
+    </property>
+    <property property_name="chromeTextColor" group_name="color" title="Page chrome text color" description="" property_type="value" value_type="color" depends_on="" value_group="chrome" display_order="6050" addon_id="XF">
+      <value>"@xf-linkColor"</value>
+    </property>
+    <property property_name="dt_account_wrapper_glyphs" group_name="dohthemeglyphs" title="Account Wrapper Icons" description="Adds icons to tabs in account wrapper page when enabled." property_type="value" value_type="boolean" depends_on="" value_group="" display_order="100" addon_id="">
+      <value>1</value>
+    </property>
+    <property property_name="dt_discussion_glyphs" group_name="dohthemeglyphs" title="Discussion List Icons" description="Adds icons next to username and date text." property_type="value" value_type="boolean" depends_on="" value_group="" display_order="80" addon_id="">
+      <value>1</value>
+    </property>
+    <property property_name="dt_extra_footer" group_name="dohthemefooter" title="Enable Extra Footer" description="" property_type="value" value_type="boolean" depends_on="" value_group="" display_order="10" addon_id="">
+      <value>0</value>
+    </property>
+    <property property_name="dt_guest_message" group_name="dohthemeheader" title="Enable Header Message" description="Shows a welcome section to your visitors." property_type="value" value_type="boolean" depends_on="" value_group="GuestMessage" display_order="90" addon_id="">
+      <value>0</value>
+    </property>
+    <property property_name="dt_messages_glyphs" group_name="dohthemeglyphs" title="Message Action Bar Icons" description="Adds icons next to the Action Bar text (such as Report, Edit, Delete, etc..)." property_type="value" value_type="boolean" depends_on="" value_group="" display_order="70" addon_id="">
+      <value>1</value>
+    </property>
+    <property property_name="dt_navigation_glyphs" group_name="dohthemeglyphs" title="Navigation Icons" description="Adds icons next to the navigation text on the navigation bar." property_type="value" value_type="boolean" depends_on="" value_group="Navigation" display_order="10" addon_id="">
+      <value>1</value>
+    </property>
+    <property property_name="dt_offcanvasmenu_linkholder_glyphs" group_name="dohthemeglyphs" title="offCanvasMenu linkHolder Icons" description="Adds icons next to the off-canvas menu header." property_type="value" value_type="boolean" depends_on="" value_group="Navigation" display_order="16" addon_id="">
+      <value>0</value>
+    </property>
+    <property property_name="dt_offcanvasmenu_links_glyphs" group_name="dohthemeglyphs" title="offCanvasMenu Links Icons" description="Adds icons next to the off-canvas menu links." property_type="value" value_type="boolean" depends_on="" value_group="Navigation" display_order="17" addon_id="">
+      <value>0</value>
+    </property>
+    <property property_name="dt_profile_tabs_glyphs" group_name="dohthemeglyphs" title="Member Profiles Tabs Icons" description="Adds icons to tabs in member profile page when enabled." property_type="value" value_type="boolean" depends_on="" value_group="" display_order="90" addon_id="">
+      <value>1</value>
+    </property>
+    <property property_name="dt_sidebar_glyphs" group_name="dohthemeglyphs" title="Sidebar Heading Icons" description="Adds icons to the sidebar headings when enabled." property_type="value" value_type="boolean" depends_on="" value_group="" display_order="60" addon_id="">
+      <value>1</value>
+    </property>
+    <property property_name="dt_sub_navigation_glyphs" group_name="dohthemeglyphs" title="Sub-navigation row Icons" description="Adds icons next to the sub-navigation text on the sub-navigation bar." property_type="value" value_type="boolean" depends_on="" value_group="Navigation" display_order="15" addon_id="">
+      <value>1</value>
+    </property>
+    <property property_name="dt_visitor_menu_glyphs" group_name="dohthemeglyphs" title="Visitor Menu Icons" description="Adds icons next to the user's visitor menu links." property_type="value" value_type="boolean" depends_on="" value_group="Navigation" display_order="18" addon_id="">
+      <value>0</value>
+    </property>
+    <property property_name="linkColor" group_name="color" title="Link color" description="Basic hyperlinks on standard background colors will use this style" property_type="value" value_type="color" depends_on="" value_group="links" display_order="1000" addon_id="XF">
+      <value>"rgb(255, 255, 255)"</value>
+    </property>
+    <property property_name="memberHeader" group_name="member" title="Member profile header" description="The member profile page's content header is styled with these settings" property_type="css" value_type="" depends_on="" value_group="" display_order="20000" css_components="text,background,border,extra" addon_id="XF">
+      <value>{
+    "background-color": "@xf-paletteColor5",
+    "border-bottom-width": "@xf-borderSize",
+    "border-bottom-color": "@xf-borderColorLight"
+}</value>
+    </property>
+    <property property_name="memberTooltipHeader" group_name="member" title="Member tooltip header" description="The member tooltip, which appears when hovering over user names, is styled with these controls" property_type="css" value_type="" depends_on="" value_group="" display_order="20300" css_components="text,background,border,extra" addon_id="XF">
+      <value>{
+    "background-color": "@xf-paletteColor5",
+    "border-bottom-width": "@xf-borderSize",
+    "border-bottom-color": "@xf-borderColorLight"
+}</value>
+    </property>
+    <property property_name="pageBg" group_name="color" title="Page background color" description="The background of the page itself, on which all other content rests" property_type="value" value_type="color" depends_on="" value_group="contentBackground" display_order="2100" addon_id="XF">
+      <value>"rgb(23, 30, 41)"</value>
+    </property>
+    <property property_name="paletteAccent1" group_name="palette" title="Accent 1" description="" property_type="value" value_type="color" depends_on="" value_group="accent" display_order="2000" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"#e93536"</value>
+    </property>
+    <property property_name="paletteColor2" group_name="palette" title="Color 2" description="" property_type="value" value_type="color" depends_on="" value_group="primary" display_order="1100" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"rgb(49, 67, 93)"</value>
+    </property>
+    <property property_name="paletteColor3" group_name="palette" title="Color 3" description="" property_type="value" value_type="color" depends_on="" value_group="primary" display_order="1200" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"#00d4f8"</value>
+    </property>
+    <property property_name="paletteColor4" group_name="palette" title="Color 4" description="" property_type="value" value_type="color" depends_on="" value_group="primary" display_order="1300" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"rgb(49, 67, 93)"</value>
+    </property>
+    <property property_name="paletteColor5" group_name="palette" title="Color 5" description="" property_type="value" value_type="color" depends_on="" value_group="primary" display_order="1400" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"rgb(23, 30, 41)"</value>
+    </property>
+    <property property_name="paletteNeutral1" group_name="palette" title="Neutral 1" description="" property_type="value" value_type="color" depends_on="" value_group="neutral" display_order="3000" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"rgb(31, 43, 59)"</value>
+    </property>
+    <property property_name="paletteNeutral3" group_name="palette" title="Neutral 3" description="" property_type="value" value_type="color" depends_on="" value_group="neutral" display_order="3200" addon_id="XF">
+      <value_parameters>hidePalette=true</value_parameters>
+      <value>"rgb(255, 255, 255)"</value>
+    </property>
+    <property property_name="publicFaviconUrl" group_name="basic" title="Favicon URL (32x32)" description="Path to the small logo that is associated with bookmarks pointing to your site. This is expected to be a 32x32 PNG image." property_type="value" value_type="string" depends_on="" value_group="logo" display_order="400" addon_id="XF">
+      <value_parameters>asset=logo</value_parameters>
+      <value>"styles\\fury\\img\\favicon.png"</value>
+    </property>
+    <property property_name="publicLogoUrl" group_name="basic" title="Logo URL" description="The web path from your site's XenForo installation directory to your logo image. If you specify an SVG image here, you should set &lt;b&gt;Emails &amp;gt; Email logo URL&lt;/b&gt; to point to a PNG image, or similar, for increased compatibility." property_type="value" value_type="string" depends_on="" value_group="logo" display_order="101" addon_id="XF">
+      <value_parameters>asset=logo</value_parameters>
+      <value>"styles\\fury\\img\\logo.png"</value>
+    </property>
+    <property property_name="standaloneTabSelected" group_name="tab" title="Standalone tabs - selected tab" description="The selected tab in groups that are not part of block headers" property_type="css" value_type="" depends_on="" value_group="" display_order="20100" css_components="text,background,border_color_simple,extra" addon_id="XF">
+      <value>{
+    "color": "@xf-textColor",
+    "border-color": "@xf-paletteAccent1"
+}</value>
+    </property>
+    <property property_name="styleType" group_name="palette" title="Style type" description="This defines the general type of style in use based on whether the content is placed on a light or dark background. This may change how colors are selected in certain scenarios." property_type="value" value_type="radio" depends_on="" value_group="setup" display_order="100" addon_id="XF">
+      <value_parameters>light={{ phrase('light') }}
+dark={{ phrase('dark') }}</value_parameters>
+      <value>"dark"</value>
+    </property>
+    <property property_name="textColorAccentContent" group_name="color" title="Accented content text color" description="" property_type="value" value_type="color" depends_on="" value_group="textOther" display_order="3200" addon_id="XF">
+      <value>"@xf-textColor"</value>
+    </property>
+    <property property_name="textColorEmphasized" group_name="color" title="Emphasized text color" description="" property_type="value" value_type="color" depends_on="" value_group="textOther" display_order="3100" addon_id="XF">
+      <value>"@xf-textColor"</value>
+    </property>
+  </properties>
+</style>
