@@ -1,0 +1,26 @@
+{
+  "name": "forum",
+  "version": "1.0.0",
+  "description": "Простой форум на PHP, необходимый в установке базы данных",
+  "main": "index.php",
+  "scripts": {
+    "start": "echo \"Запустите через веб-сервер: php -S localhost:8000\"",
+    "build": "echo \"Сборка не требуется — чистый PHP проект\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/StepanKislin/forum.git"
+  },
+  "keywords": [
+    "forum",
+    "php",
+    "sqlite",
+    "no-nodejs",
+    "static"
+  ],
+  "author": "Kislin Stepan s.a.kislin@mail.ru",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/StepanKislin/forum"
+    }
+}

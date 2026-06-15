@@ -1,0 +1,51 @@
+a {
+    text-decoration: none;
+    color: rgb(0, 89, 255);
+    font-weight: 500;
+    transition: transform 2s;
+}
+
+
+
+.are-large {
+    text-align: center;
+    margin-top: 20rem;
+}
+
+.a {
+    text-align: center;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: rgb(0, 89, 255);
+    font-size: x-large;
+    font-weight: 500;
+    transition: transform 2s;
+}
+
+.a:hover {
+    transform: scale(1.35);
+}
+
+.body {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    width: 30rem;
+    
+}
+
+.b {
+    text-decoration: none;
+}
+
+.c {
+    font-size: larger;
+}
+
+.d {
+    font-size: large;
+}
